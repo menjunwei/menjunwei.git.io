@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        p{
+            display: none;
+            background-color: pink;
+            margin: 0;
+        }
+        .x{
+            display: block;
+        }
+        .pu{
+            width: 200px;
+            height: 250px;
+            background-color: rgba(0, 255, 255, 0.601);
+            transition: all 0.9s;
+            border-radius: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-1.8.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("input[name=no]").toggle(
+                function(){
+                    $(".p1").addClass("x");
+                },
+                function(){
+                    $(".p2").addClass("x");
+                },
+                function(){
+                    $(".p3").addClass("x");
+                },
+                function(){
+                    $(".p4").addClass("x");
+                },
+                function(){
+                    $(".p5").addClass("x");
+                },
+                function(){
+                    $(".p6").addClass("x");
+                },
+                function(){
+                    $(".p7").addClass("x");
+                },
+                function(){
+                    $(".p8").addClass("x");
+                },
+                function(){
+                    $("input[name=an]").addClass("pu");
+                },
+            );
+        });
+        $(document).ready(function(){
+            $("input[name=an]").click(function(){
+                $(".p10").addClass("x")
+            })
+        })
+    </script>
+</head>
+<body>
+    <div>亲爱的王芝婷小朋友能给我个亲亲吗！！！
+        <br>
+        <p class="p1">求求了就一下<img src="images/weiqu.gif" height="80px"></p>
+        <p class="p2"><img src="images/weiqu.gif" height="80px">你那么漂亮，那么可爱</p>
+        <p class="p3">人美声甜。肤白貌美<img src="images/weiqu.gif" height="80px"></p>
+        <p class="p4"><img src="images/weiqu.gif" height="80px">全天下你最好了!</p>
+        <p class="p5">祝你多吃不胖天天掉肉，请给我一个木啊！!<img src="images/weiqu.gif" height="80px"></p>
+        <p class="p6">你是我跑完8000米还想跑过去抱的人<img src="images/weiqu.gif" height="80px"></p>
+        <p class="p7"><img src="images/weiqu.gif" height="80px">你是在我脑海里的那个人</p>
+        <p class="p8">你是全天下最好的宝贝！！<img src="images/weiqu.gif" height="80px"></p>
+        <p class="p9"><img src="images/weiqu.gif" height="80px">好像要个亲亲，请给我个mua！宝宝</p>
+        <p class="p10">你是最好的！Mua<img src="images/亲亲.gif" height="90px"></p>
+    <input type="button" value="mua!" name="an">
+    <input type="button" value="漏漏漏！" name="no">
+</div>
+</body>
+</html>
